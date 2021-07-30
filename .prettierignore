@@ -1,0 +1,4 @@
+#Ignore Files.
+
+# Ignoring setup wizard steps file.
+assets/js/getting-started/screens/index.ts
