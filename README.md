@@ -11,8 +11,6 @@ Demo
 Import skeleton comonents
 
 ```javascript
-import Box, { Column, Row } from "./index.js";
-// OR
 import { Box, Column, Row } from "./index.js";
 ```
 
