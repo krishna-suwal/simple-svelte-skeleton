@@ -1,6 +1,6 @@
 {
   "name": "simple-svelte-skeleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple skeleton components for svelte.",
   "main": "dist/index.js",
   "author": "Krishna Suwal",
