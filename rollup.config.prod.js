@@ -13,7 +13,6 @@ export default {
 		name: "simple-svelte-skeleton",
 		file: "dist/bundled/index.js",
 	},
-	external: ["svelte", "svelte/store"],
 	plugins: [
 		svelte({
 			compilerOptions: {
