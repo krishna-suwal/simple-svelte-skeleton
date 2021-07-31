@@ -2,13 +2,13 @@
   "name": "simple-svelte-skeleton",
   "version": "1.0.1",
   "description": "Simple skeleton components for svelte.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "Krishna Suwal",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
+    "build": "node ./scripts/prepare.js",
+    "dev": "rollup -c rollup.config.dev.js -w",
+    "start": "sirv public --no-clear -c rollup.config.dev.js"
   },
   "keywords": [
     "svelte",
@@ -18,15 +18,16 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "fs-extra": "10.0.0",
+    "make-dir": "3.1.0",
+    "rimraf": "3.0.2",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^1.0.0",
     "svelte": "^3.0.0"
-  },
-  "dependencies": {
-    "sirv-cli": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,10 @@
   "bugs": {
     "url": "https://github.com/krishna-suwal/simple-svelte-skeleton/issues"
   },
-  "homepage": "https://github.com/krishna-suwal/simple-svelte-skeleton"
+  "homepage": "https://github.com/krishna-suwal/simple-svelte-skeleton",
+  "dependencies": {},
+  "files": [
+    "README.md",
+    "dist/**/*"
+  ]
 }
