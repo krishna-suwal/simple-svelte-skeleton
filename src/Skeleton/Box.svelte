@@ -5,15 +5,15 @@
 		.map(([key, value]) => {
 			if (
 				value !== null &&
-				key.indexOf('$$') !== 0 &&
-				!['stretch'].includes(key)
+				key.indexOf("$$") !== 0 &&
+				!["stretch"].includes(key)
 			) {
 				return `${key}:${value};`;
 			}
 		})
-		.join('');
+		.join("");
 
-	$: style += stretch ? 'flex-grow:1;' : '';
+	$: style += stretch ? "flex-grow:1;" : "";
 </script>
 
 <div class="skeleton-box" {style}>
@@ -23,8 +23,6 @@
 <style>
 	.skeleton-box {
 		border-radius: 5px;
-		/* background: #525252; */
-		/* background: #d1d1d1; */
 		background: #f3f3f3;
 	}
 </style>
