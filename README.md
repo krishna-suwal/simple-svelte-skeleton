@@ -1,105 +1,83 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Simple Svelte Skeleton
 
----
+Simple components for skeleton to use in svelte 😎
 
-# svelte app
+## Usage Example
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Import skeleton comonents
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+```javascript
+import Box, { Column, Row } from "./index.js";
+// OR
+import { Box, Column, Row } from "./index.js";
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+Use the components
 
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
+```html
+<Column>
+	<Row>
+		<Column width="100px">
+			<Box width="100%" height="100px" border-radius="100%" />
+		</Column>
+		<Column stretch>
+			<Box width="100%" height="100px" />
+		</Column>
+	</Row>
+	<Box width="100%" height="40px" />
+	<Box width="100%" height="40px" />
+</Column>
 ```
 
-...then start [Rollup](https://rollupjs.org):
+## Install
 
-```bash
-npm run dev
-```
+Using `npm`:
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+````sh
+npm install simple-svelte-skeleton
+````
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+Using `yarn`:`
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+````sh
+yarn add simple-svelte-skeleton
+````
 
-## Building and running in production mode
+## API
+For all the components `Column`, `Row` and `Box`, you can pass CSS properties and values as props.
 
-To create an optimised version of the app:
+### `<Column>`
 
-```bash
-npm run build
-```
+Stack components vertically and add spaces in-between. Currently it adds `8px` margin.
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+Props:
 
+- All CSS properties
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
 
-## Single-page app mode
+### `<Row>`
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+Stack components vertically and add spaces in-between. Currently it adds `8px` margin.
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+Props:
 
-```js
-"start": "sirv public --single"
-```
+- All CSS properties
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
 
-## Using TypeScript
+### `<Box>`
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+Stack components vertically and add spaces in-between. Currently it adds `8px` margin.
 
-```bash
-node scripts/setupTypeScript.js
-```
+Props:
 
-Or remove the script via:
+- All CSS properties
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
 
-```bash
-rm scripts/setupTypeScript.js
-```
+## Development
 
-## Deploying to the web
+### Skeleton components
+The skeleton components are located in `src/Skeleton` directory. You can view the components working by running:
 
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
+```sh
+yarn dev
 ```
