@@ -2,6 +2,8 @@
 	import { Box, Column, Row } from "./index.js";
 </script>
 
+<h1>Simple Svelte Skeleton Demo</h1>
+
 <Column>
 	<Row>
 		<Column width="100px">
