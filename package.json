@@ -6,7 +6,7 @@
   "author": "Krishna Suwal",
   "license": "MIT",
   "scripts": {
-    "build": "node ./scripts/prepare.js",
+    "build": "yarn install && node ./scripts/prepare.js",
     "dev": "rollup -c rollup.config.dev.js -w",
     "start": "sirv public --no-clear -c rollup.config.dev.js"
   },
