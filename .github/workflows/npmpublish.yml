@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: rm -rf node_modules && yarn build # Make clean install of dependencies
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
