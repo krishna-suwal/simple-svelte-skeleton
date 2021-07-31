@@ -1,7 +1,5 @@
 <script>
-	import Box from './Skeleton/Box.svelte';
-	import Column from './Skeleton/Column.svelte';
-	import Row from './Skeleton/Row.svelte';
+	import Box, { Column, Row } from "./index.js";
 </script>
 
 <Column>

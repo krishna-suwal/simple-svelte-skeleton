@@ -1,7 +1,10 @@
 {
-  "name": "svelte-app",
+  "name": "simple-svelte-skeleton",
   "version": "1.0.0",
-  "private": true,
+  "description": "Simple skeleton components for svelte.",
+  "main": "src/index.js",
+  "author": "Krishna Suwal",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -19,5 +22,13 @@
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishna-suwal/simple-svelte-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krishna-suwal/simple-svelte-skeleton/issues"
+  },
+  "homepage": "https://github.com/krishna-suwal/simple-svelte-skeleton"
 }
