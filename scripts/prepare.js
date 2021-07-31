@@ -55,7 +55,7 @@ function createDistDirectory() {
 function installDependecies() {
 	return new Promise((resolve, reject) => {
 		require("child_process")
-			.exec("yarn install", (error, stdout, stderr) => {
+			.exec("yarn install --frozen-lockfile", (error, stdout, stderr) => {
 				if (error) {
 					return reject(error);
 				}
