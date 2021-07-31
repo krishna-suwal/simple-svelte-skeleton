@@ -1,5 +1,5 @@
 <script>
-	import Box, { Column, Row } from "./index.js";
+	import { Box, Column, Row } from "./index.js";
 </script>
 
 <Column>
