@@ -55,7 +55,7 @@ Stack components vertically and add spaces in-between. Currently it adds `8px` m
 Props:
 
 - All CSS properties
-- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding inline CSS `flex-grow: 1`.
 
 ### `<Row>`
 
@@ -64,7 +64,7 @@ Stack components vertically and add spaces in-between. Currently it adds `8px` m
 Props:
 
 - All CSS properties
-- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding inline CSS `flex-grow: 1`.
 
 ### `<Box>`
 
@@ -73,7 +73,7 @@ Stack components vertically and add spaces in-between. Currently it adds `8px` m
 Props:
 
 - All CSS properties
-- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding `flex-grow: 1` CSS property.
+- *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding inline CSS `flex-grow: 1`.
 
 ## Development
 
