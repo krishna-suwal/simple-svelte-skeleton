@@ -4,6 +4,10 @@ Simple components for skeleton to use in svelte 😎
 
 ## Usage Example
 
+Demo
+
+![Demo 1](.github/Screenshot_1.png)
+
 Import skeleton comonents
 
 ```javascript
@@ -81,3 +85,4 @@ The skeleton components are located in `src/Skeleton` directory. You can view th
 ```sh
 yarn dev
 ```
+then go to the localhost URL.
