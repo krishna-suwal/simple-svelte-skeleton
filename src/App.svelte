@@ -7,7 +7,7 @@
 <Column>
 	<Row>
 		<Column width="100px">
-			<Box width="100%" height="100px" border-radius="100%" />
+			<Box width="100%" height="100px" round />
 		</Column>
 		<Column stretch>
 			<Box width="100%" height="100px" />

@@ -1,5 +1,6 @@
 <script>
 	export let stretch = false;
+	export let round = false;
 
 	let style = Object.entries($$props)
 		.map(([key, value]) => {
@@ -14,6 +15,7 @@
 		.join("");
 
 	$: style += stretch ? "flex-grow:1;" : "";
+	$: style += round ? "border-radius:100%;" : "";
 </script>
 
 <div class="skeleton-box" {style}>
