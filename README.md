@@ -11,7 +11,7 @@ Demo
 Import skeleton comonents
 
 ```javascript
-import { Box, Column, Row } from "./index.js";
+import { Box, Column, Row } from "simple-svelte-skeleton";
 ```
 
 Use the components
@@ -46,7 +46,7 @@ yarn add simple-svelte-skeleton
 ````
 
 ## API
-For all the components `Column`, `Row` and `Box`, you can pass CSS properties and values as props.
+For all the components `Column`, `Row` and `Box`, you can pass any CSS properties as props.
 
 ### `<Column>`
 
@@ -59,7 +59,7 @@ Props:
 
 ### `<Row>`
 
-Stack components vertically and add spaces in-between. Currently it adds `8px` margin.
+Stack components horizontally and add spaces in-between. Currently it adds `8px` margin.
 
 Props:
 
@@ -68,19 +68,10 @@ Props:
 
 ### `<Box>`
 
-Stack components vertically and add spaces in-between. Currently it adds `8px` margin.
+A box made with `div` element.
 
 Props:
 
 - All CSS properties
 - *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding inline CSS `flex-grow: 1`.
 
-## Development
-
-### Skeleton components
-The skeleton components are located in `src/Skeleton` directory. You can view the components working by running:
-
-```sh
-yarn dev
-```
-then go to the localhost URL.
