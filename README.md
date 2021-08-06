@@ -20,7 +20,7 @@ Use the components
 <Column>
 	<Row>
 		<Column width="100px">
-			<Box width="100%" height="100px" border-radius="100%" />
+			<Box width="100%" height="100px" round />
 		</Column>
 		<Column stretch>
 			<Box width="100%" height="100px" />
@@ -74,4 +74,5 @@ Props:
 
 - All CSS properties
 - *`stretch`* (boolean): Stretches the component so that it takes all the remaining space by adding inline CSS `flex-grow: 1`.
+- *`round`* (boolean): Makes the component circular by adding inline CSS `border-radius: 100%`.
 
